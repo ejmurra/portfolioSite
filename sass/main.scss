@@ -1,0 +1,47 @@
+@import 'bourbon/bourbon';
+@import 'base/grid-settings';
+@import 'neat/neat';
+@import 'base/base';
+
+
+body{
+  margin:0 0 0 0;
+}
+
+html{
+  background: $base-background-color;
+  padding: 0px;
+}
+div{
+  border-radius-top: 5px;
+}
+.container {
+  @include outer-container;
+  background: none;
+}
+.top{
+  @include outer-container;
+}
+
+nav{
+  background: $backgroundThird;
+  padding: 10px;
+  margin: 0px;
+  display: block;
+  clear: both;
+  a{
+    text-decoration: none;
+    color: #c0D890;
+    margin: 0 5 0 5;
+    &:hover{
+      transition: color 1.0s ease;
+      color: white;
+    }
+  }
+}
+.footer{
+  @extend nav;
+  margin-top: 20px;
+  color: $backgroundSecond;
+  border-radius:0px;
+}
