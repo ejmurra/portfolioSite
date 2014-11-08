@@ -60,11 +60,11 @@
 
 
     list-style-type: none;
-    padding: 5px;
+    padding: 10px;
 
   }
   .info{
-    padding-left:30px;
+    //padding-left:30px;
   }
   .proj{
     // @include span-columns(10 of 10);
@@ -73,12 +73,12 @@
   }
   .show{
     background: $backgroundSecond;
-    padding-left:10px;
+    //padding-left:10px;
   }
   .hide{
     // @include span-columns(10 of 10);
     background: $backgroundSecond;
-    padding-left:10px;
+    //padding-left:10px;
   }
 
 
@@ -95,14 +95,16 @@
   }
   #itemMaster{
     &:hover{
+      margin-top: 5px;
       cursor:pointer;
       cursor:hand;
-      border: 6px solid $alert;
-      transition: border .5s ease;
+      box-shadow: 5px 5px 2px #888888;
+      transition: .3s ease;
     }
     //padding-left: 10px;
     margin-bottom: 20px;
     box-shadow: 10px 10px 5px #888888;
+    position: relative;
   }
 
 }
