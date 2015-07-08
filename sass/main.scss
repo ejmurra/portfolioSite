@@ -25,7 +25,6 @@ div{
   background: none;
   padding: 10px;
   padding-top: 30px;
-  height: 86%;
 }
 .top{
   @include outer-container;
@@ -101,4 +100,9 @@ nav{
     width: 100px;
     float: right;
   }
+}
+#footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }

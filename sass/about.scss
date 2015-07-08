@@ -1,0 +1,19 @@
+@import 'bourbon/bourbon';
+@import 'base/grid-settings';
+@import 'neat/neat';
+@import 'base/base';
+
+#center {
+  @include span-columns(8);
+  @include shift(2);
+}
+#main-about {
+  @include span-columns(10);
+  @include shift(1);
+  background-color: white;
+  padding: 1.5em;
+  margin-bottom: 1.5em;
+  img {
+    @include span-columns(3 of 10);
+  }
+}
